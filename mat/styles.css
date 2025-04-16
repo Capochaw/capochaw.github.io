@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+	max-height: 98vh;
+}
+
+.imagecenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titlelist {
+	text-align:center;
+}
+
+.titlelist a:link{
+    color: black;
+}
+
+.titlelist a:hover{
+    color: white;
+    background-color: black;
+
+}
+
+.buttonprev {
+		text-align: left;
+}
+
+.buttonnext {
+		text-align: right;
+}
+
+.roll {
+	position: fixed;
+	z-index: 9999;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	height: auto;
+}
+
+html {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.mdtext {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.image {
+
+}
+
+.homeclass {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 9999;
+	background: white;
+}
+
+.discord {
+    margin-left: 20%;
+    margin-right: 20%;
+	padding: 10px;
+	background-color: white;
+	border: 2px solid black;
+}
+
+.bodyclass {
+    margin-left: 20%;
+    margin-right: 20%;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: white;
+	border: 2px solid black;
+}
+
+@media (max-width: 768px) {
+    .mi-div {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.background {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%; /* Doble del ancho de la pantalla para la repetición */
+    height: 10%; /* Doble de la altura de la pantalla para la repetición */
+    background: url('img/logo.png') repeat;
+    background-size: auto auto; /* Permite repetir en ambos ejes */
+    opacity: 0.4; /* Reducción de opacidad al 40% */
+    animation: scrollBackground 3.6s linear infinite;
+}
+@keyframes scrollBackground {
+    from { transform: translate(0, 0); }
+    to { transform: translate(-400px,0); } /* Ajustado para que la repetición sea fluida en ambos ejes */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Columnas adaptables */
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item img {
+    width: 220px;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
+.caption {
+    margin-top: 5px;
+}
