@@ -24,7 +24,7 @@ function adjustDivPosition() {
     if(ha > divh){
         abg.style.height = ha + 'px';
     } else {
-        var res = divh + logoh;
+        var res = h + divh + logoh;
         abg.style.height = res + 'px';
     }
 	console.log("Mierda.");
